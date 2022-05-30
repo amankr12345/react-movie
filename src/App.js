@@ -10,7 +10,7 @@ function App() {
      }
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.get(`http://www.omdbapi.com/?s=${text}&apikey=d239c4bc`)
+        axios.get(`https://www.omdbapi.com/?s=${text}&apikey=d239c4bc`)
         .then(res=>setMovie(res.data.Search))    
         console.log(movie)    
     }
